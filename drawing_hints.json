@@ -1,0 +1,502 @@
+[
+  {
+    "item": "Apple",
+    "hints": [
+      "It\u2019s something you might find on a tree or in a lunchbox.",
+      "It\u2019s round and fits in your hand.",
+      "It\u2019s often red, green, or yellow.",
+      "It\u2019s a common fruit with a crisp bite.",
+      "It\u2019s the fruit that might keep the doctor away."
+    ]
+  },
+  {
+    "item": "Car",
+    "hints": [
+      "It moves and is used every day by many people.",
+      "It usually has four wheels.",
+      "It gets you from one place to another quickly.",
+      "It runs on fuel or electricity.",
+      "You drive it on roads and it has an engine."
+    ]
+  },
+  {
+    "item": "Sun",
+    "hints": [
+      "You see it almost every day.",
+      "It\u2019s a massive source of light and heat.",
+      "It appears in the sky and is very bright.",
+      "It rises in the east and sets in the west.",
+      "It\u2019s the star at the center of our solar system."
+    ]
+  },
+  {
+    "item": "Tree",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a tree if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Dog",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a dog if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Cat",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a cat if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Book",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a book if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Phone",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a phone if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Chair",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a chair if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Shoe",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a shoe if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "House",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a house if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Boat",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a boat if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Airplane",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a airplane if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Clock",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a clock if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Guitar",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a guitar if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Pizza",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a pizza if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Ice Cream",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a ice cream if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Ball",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a ball if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Fish",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a fish if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Candle",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a candle if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Camera",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a camera if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Laptop",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a laptop if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Glasses",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a glasses if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Cup",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a cup if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Pencil",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a pencil if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Backpack",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a backpack if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Bicycle",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a bicycle if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Toothbrush",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a toothbrush if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "T-shirt",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a t-shirt if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Bed",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a bed if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Umbrella",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a umbrella if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Key",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a key if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Bottle",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a bottle if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Envelope",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a envelope if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Hammer",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a hammer if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Television",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a television if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Microwave",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a microwave if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Basketball",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a basketball if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Rocket",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a rocket if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Spider",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a spider if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Duck",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a duck if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Snail",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a snail if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Banana",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a banana if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Cloud",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a cloud if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Robot",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a robot if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Washing Machine",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a washing machine if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Toilet",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a toilet if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Rainbow",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a rainbow if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Zebra",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a zebra if you\u2019ve ever seen one."
+    ]
+  },
+  {
+    "item": "Globe",
+    "hints": [
+      "It\u2019s something commonly seen or used.",
+      "It has a familiar shape or function.",
+      "It is often used in everyday life.",
+      "You can easily recognize it by its look or purpose.",
+      "It\u2019s definitely a globe if you\u2019ve ever seen one."
+    ]
+  }
+]
