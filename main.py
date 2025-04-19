@@ -1,5 +1,7 @@
 import customtkinter as ctk
 
+BUTTON_PADY=20
+BUTTON_PADX=10
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -11,7 +13,8 @@ class App(ctk.CTk):
         self.container = ctk.CTkFrame(self)
         #fill="both": allows the container to fill the available space in both directions
         #expand=True: allows the container to expand to fill the available space
-        self.container.pack(fill="both", expand=True)
+        # self.container.pack(fill="both", expand=True)
+        self.container.grid(row=0,column=0)
 
         self.frames = {}
 
@@ -36,10 +39,10 @@ class MainMenu(ctk.CTkFrame):
         super().__init__(parent)
         self.controller = controller
 
-        ctk.CTkLabel(self, text="Main Menu").pack(pady=20)
-        ctk.CTkButton(self, text="Start Game", command=lambda: controller.show_frame("GamePage")).pack()
-        ctk.CTkButton(self, text="Settings", command=lambda: controller.show_frame("SettingsPage")).pack()
-        ctk.CTkButton(self, text= "QUIT", command= controller.close).pack(pady=20)
+        ctk.CTkLabel(self, text="Main Menu").grid(row=0,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
+        ctk.CTkButton(self, text="Start Game", command=lambda: controller.show_frame("GamePage")).grid(row=1,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
+        ctk.CTkButton(self, text="Settings", command=lambda: controller.show_frame("SettingsPage")).grid(row=2,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
+        ctk.CTkButton(self, text= "QUIT", command= controller.close).grid(row=3,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
 
 
 class SettingsPage(ctk.CTkFrame):
