@@ -49,6 +49,9 @@ class MainMenu(ctk.CTkFrame):
 def change_color_mode(color):
     ctk.set_appearance_mode(color)
 
+def change_theme_color(color):
+    ctk.set_default_color_theme(color)
+
 class SettingsPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
@@ -57,7 +60,7 @@ class SettingsPage(ctk.CTkFrame):
         settingsLabel=ctk.CTkLabel(self, text="Settings")
         settingsLabel.pack(pady=5)
         
-        colorThemeLabel=ctk.CTkLabel(self, text="Color theme")
+        colorThemeLabel=ctk.CTkLabel(self, text="Game Appearance")
         colorThemeLabel.pack(pady=5)
 
         lightModeButton = ctk.CTkButton(self, text="Light", command=lambda: change_color_mode("light"))
@@ -65,6 +68,17 @@ class SettingsPage(ctk.CTkFrame):
 
         darkModeButton = ctk.CTkButton(self, text="Dark", command=lambda: change_color_mode("dark"))
         darkModeButton.pack(pady=5)
+
+        buttonThemeLabel=ctk.CTkLabel(self, text="Color theme")
+        buttonThemeLabel.pack(pady=5)
+
+        setThemeBlueButton = ctk.CTkButton(self, text = "Blue", command=lambda: change_theme_color("blue"))
+        setThemeBlueButton.pack(pady=5)
+        setThemeGreenButton = ctk.CTkButton(self, text = "Green", command=lambda: change_theme_color("green"))
+        setThemeGreenButton.pack(pady=5)
+        setThemeDarkBlueButton = ctk.CTkButton(self, text = "Dark Blue", command=lambda: change_theme_color("dark-blue"))
+        setThemeDarkBlueButton.pack(pady=5)
+
 
         backButton=ctk.CTkButton(self, text="Back", command=lambda: controller.show_frame("MainMenu"))
         backButton.pack(pady=5)
