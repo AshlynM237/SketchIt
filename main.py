@@ -46,11 +46,15 @@ class MainMenu(ctk.CTkFrame):
         ctk.CTkButton(self, text="Settings", command=lambda: controller.show_frame("SettingsPage")).grid(row=2,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
         ctk.CTkButton(self, text= "QUIT", command= controller.close).grid(row=3,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
 
-def change_color_mode(color):
-    ctk.set_appearance_mode(color)
+# def change_color_mode(color):
+#     ctk.set_appearance_mode(color)
 
 def change_theme_color(color):
     ctk.set_default_color_theme(color)
+    
+def setApperanceChanges(apperance='light',color = 'blue'):
+    ctk.set_appearance_mode(apperance)
+    # ctk.set_default_color_theme(color)
 
 class SettingsPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
@@ -62,12 +66,21 @@ class SettingsPage(ctk.CTkFrame):
         
         colorThemeLabel=ctk.CTkLabel(self, text="Game Appearance")
         colorThemeLabel.pack(pady=5)
+        
+        apperanceSelection = ctk.StringVar(value='light')
+        
+        apperanceRadio1=ctk.CTkRadioButton(self, text="Light", variable=apperanceSelection, value='light')
+        apperanceRadio1.pack(pady=5)
+        
+        apperanceRadio2=ctk.CTkRadioButton(self, text="Dark", variable=apperanceSelection, value="dark")
+        apperanceRadio2.pack(pady=5)
 
-        lightModeButton = ctk.CTkButton(self, text="Light", command=lambda: change_color_mode("light"))
-        lightModeButton.pack(pady=5)
 
-        darkModeButton = ctk.CTkButton(self, text="Dark", command=lambda: change_color_mode("dark"))
-        darkModeButton.pack(pady=5)
+        # lightModeButton = ctk.CTkButton(self, text="Light", command=lambda: change_color_mode("light"))
+        # lightModeButton.pack(pady=5)
+
+        # darkModeButton = ctk.CTkButton(self, text="Dark", command=lambda: change_color_mode("dark"))
+        # darkModeButton.pack(pady=5)
 
         buttonThemeLabel=ctk.CTkLabel(self, text="Color theme")
         buttonThemeLabel.pack(pady=5)
@@ -78,6 +91,9 @@ class SettingsPage(ctk.CTkFrame):
         setThemeGreenButton.pack(pady=5)
         setThemeDarkBlueButton = ctk.CTkButton(self, text = "Dark Blue", command=lambda: change_theme_color("dark-blue"))
         setThemeDarkBlueButton.pack(pady=5)
+        
+        saveChanges=ctk.CTkButton(self,text= "Save Changes",command=lambda: setApperanceChanges(apperance=apperanceSelection.get()))
+        saveChanges.pack(pady=5)
 
 
         backButton=ctk.CTkButton(self, text="Back", command=lambda: controller.show_frame("MainMenu"))
