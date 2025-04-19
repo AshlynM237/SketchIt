@@ -46,34 +46,29 @@ class MainMenu(ctk.CTkFrame):
         ctk.CTkButton(self, text="Settings", command=lambda: controller.show_frame("SettingsPage")).grid(row=2,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
         ctk.CTkButton(self, text= "QUIT", command= controller.close).grid(row=3,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
 
-def light_function():
-    ctk.set_appearance_mode("light")
-def dark_function():
-    ctk.set_appearance_mode("dark")
-
-
+def change_color_mode(color):
+    ctk.set_appearance_mode(color)
 
 class SettingsPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
         self.controller = controller
 
-        ctk.CTkLabel(self, text="Settings").pack(pady=20)
-        ctk.CTkLabel(self, text="Color theme").pack(pady=60)
+        settingsLabel=ctk.CTkLabel(self, text="Settings")
+        settingsLabel.pack(pady=5)
+        
+        colorThemeLabel=ctk.CTkLabel(self, text="Color theme")
+        colorThemeLabel.pack(pady=5)
 
+        lightModeButton = ctk.CTkButton(self, text="Light", command=lambda: change_color_mode("light"))
+        lightModeButton.pack(pady=5)
 
-        Light_Mode = ctk.CTkButton(self, text="Light", command=light_function)
-        Light_Mode.place(relx=0.5, rely=0.5, anchor=ctk.CENTER)
+        darkModeButton = ctk.CTkButton(self, text="Dark", command=lambda: change_color_mode("dark"))
+        darkModeButton.pack(pady=5)
 
-        Dark_Mode = ctk.CTkButton(self, text="Dark", command=dark_function)
-        Dark_Mode.place(relx=0.5, rely=0.6, anchor=ctk.CENTER)
-
-
-        ctk.CTkButton(self, text="Back", command=lambda: controller.show_frame("MainMenu")).pack()
+        backButton=ctk.CTkButton(self, text="Back", command=lambda: controller.show_frame("MainMenu"))
+        backButton.pack(pady=5)
     
-
-
-
 
 class GamePage(ctk.CTkFrame):
     def __init__(self, parent, controller):
