@@ -3,11 +3,14 @@ import customtkinter as ctk
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Game")
+        self.title("SketchIt")
         self.geometry("600x400")
 
         # Container to hold all pages
+        # CTkFrame is a customtkinter frame that can be used to create a container for other widgets
         self.container = ctk.CTkFrame(self)
+        #fill="both": allows the container to fill the available space in both directions
+        #expand=True: allows the container to expand to fill the available space
         self.container.pack(fill="both", expand=True)
 
         self.frames = {}
