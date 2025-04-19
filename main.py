@@ -2,6 +2,8 @@ import customtkinter as ctk
 
 BUTTON_PADY=20
 BUTTON_PADX=10
+appearance_mode = "dark" # Modes: system (default), light, dark
+color_theme = "blue" # Themes: blue (default), dark-blue, green
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -44,6 +46,12 @@ class MainMenu(ctk.CTkFrame):
         ctk.CTkButton(self, text="Settings", command=lambda: controller.show_frame("SettingsPage")).grid(row=2,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
         ctk.CTkButton(self, text= "QUIT", command= controller.close).grid(row=3,column=0,pady=BUTTON_PADY,padx=BUTTON_PADX)
 
+def light_function():
+    ctk.set_appearance_mode("light")
+def dark_function():
+    ctk.set_appearance_mode("dark")
+
+
 
 class SettingsPage(ctk.CTkFrame):
     def __init__(self, parent, controller):
@@ -51,7 +59,18 @@ class SettingsPage(ctk.CTkFrame):
         self.controller = controller
 
         ctk.CTkLabel(self, text="Settings").pack(pady=20)
+        ctk.CTkLabel(self, text="Color theme").pack(pady=60)
+
+
+        Light_Mode = ctk.CTkButton(self, text="Light", command=light_function)
+        Light_Mode.place(relx=0.5, rely=0.5, anchor=ctk.CENTER)
+
+        Dark_Mode = ctk.CTkButton(self, text="Dark", command=dark_function)
+        Dark_Mode.place(relx=0.5, rely=0.6, anchor=ctk.CENTER)
+
+
         ctk.CTkButton(self, text="Back", command=lambda: controller.show_frame("MainMenu")).pack()
+    
 
 
 
@@ -75,13 +94,10 @@ if __name__ == "__main__":
     app.mainloop()
 
 
-# import customtkinter
-
-
 # customtkinter.set_appearance_mode("dark")  # Modes: system (default), light, dark
 # customtkinter.set_default_color_theme("green")  # Themes: blue (default), dark-blue, green
 
-# app = customtkinter.CTk()  # reate CTk window like you do with the Tk window
+# app = customtkinter.CTk()  # create CTk window like you do with the Tk window
 # app.geometry("400x240")
 
 # def button_function():
