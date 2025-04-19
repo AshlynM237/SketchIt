@@ -24,6 +24,9 @@ class App(ctk.CTk):
         frame = self.frames[page_name]
         frame.tkraise()
 
+    def close(self):
+        self.quit()
+
 
 class MainMenu(ctk.CTkFrame):
     def __init__(self, parent, controller):
@@ -33,6 +36,7 @@ class MainMenu(ctk.CTkFrame):
         ctk.CTkLabel(self, text="Main Menu").pack(pady=20)
         ctk.CTkButton(self, text="Start Game", command=lambda: controller.show_frame("GamePage")).pack()
         ctk.CTkButton(self, text="Settings", command=lambda: controller.show_frame("SettingsPage")).pack()
+        ctk.CTkButton(self, text= "QUIT", command= controller.close).pack(pady=20)
 
 
 class SettingsPage(ctk.CTkFrame):
@@ -44,6 +48,8 @@ class SettingsPage(ctk.CTkFrame):
         ctk.CTkButton(self, text="Back", command=lambda: controller.show_frame("MainMenu")).pack()
 
 
+
+
 class GamePage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
@@ -51,6 +57,9 @@ class GamePage(ctk.CTkFrame):
 
         ctk.CTkLabel(self, text="Game Page").pack(pady=20)
         ctk.CTkButton(self, text="Back to Menu", command=lambda: controller.show_frame("MainMenu")).pack()
+
+    
+
 
 
 if __name__ == "__main__":
