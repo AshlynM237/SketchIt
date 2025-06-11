@@ -1,5 +1,5 @@
 import customtkinter as ctk
-
+from hint_manager import loadWords
 global player_name
 player_name = ""
 
@@ -131,7 +131,7 @@ class GamePage(ctk.CTkFrame):
 
 import random
 class OptionPage(ctk.CTkFrame):
-    def __init__(self, parent, controller,options=['Car','Tomato','Dog']):
+    def __init__(self, parent, controller,options=loadWords()):
         super().__init__(parent)
         self.controller = controller
         optionsCapacity = len(options)-1
@@ -139,6 +139,7 @@ class OptionPage(ctk.CTkFrame):
 
         ChoiceLabel=ctk.CTkLabel(self, text="Choose a word:")
         ChoiceLabel.pack(pady=5)
+        print(options)
 
 
         for i in range(3):
@@ -148,28 +149,9 @@ class OptionPage(ctk.CTkFrame):
 
             options1 = ctk.CTkButton(self, text = optionName, command = lambda: print("test"))
             options1.pack(pady=5)
-
             used.append(optionName)
-
-        # wanted to make automatic 
-
-        # randomitem = options[random.randint(0,optionsCapacity)]
-
-        # option1 = ctk.CTkButton(self, text = randomitem, command = lambda: print("test"))
-        # option1.pack(pady=5)
-
-        # randomitem = options[random.randint(0,optionsCapacity)]
-        # options.pop(randomitem)
-
-        # option2 = ctk.CTkButton(self, text = randomitem, command = lambda: print("test"))
-        # option2.pack(pady=5)
-
-        # randomitem = options[random.randint(0,optionsCapacity)]
-        # options.pop(randomitem)
-
-        # option3 = ctk.CTkButton(self, text = randomitem, command = lambda: print("test"))
-        # option3.pack(pady=5)
-
+            print(used)
+            
 if __name__ == "__main__":
     ctk.set_appearance_mode("dark")
     app = App()
