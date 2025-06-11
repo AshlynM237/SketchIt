@@ -1,7 +1,12 @@
 import customtkinter as ctk
 
+global player_name
+player_name = ""
+
 BUTTON_PADY=20
 BUTTON_PADX=10
+
+
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -11,6 +16,8 @@ class App(ctk.CTk):
         # Container to hold all pages
         # CTkFrame is a customtkinter frame that can be used to create a container for other widgets
         self.container = ctk.CTkFrame(self)
+
+        
         #fill="both": allows the container to fill the available space in both directions
         #expand=True: allows the container to expand to fill the available space
         # self.container.pack(fill="both", expand=True)
@@ -26,7 +33,7 @@ class App(ctk.CTk):
             frame.destroy()
             
         self.frames = {}
-        for F in (MainMenu, SettingsPage, GamePage):
+        for F in (MainMenu, SettingsPage, GamePage,OptionPage):
             page_name = F.__name__
             frame = F(parent=self.container, controller=self)
             self.frames[page_name] = frame
@@ -102,10 +109,66 @@ class SettingsPage(ctk.CTkFrame):
 class GamePage(ctk.CTkFrame):
     def __init__(self, parent, controller):
         super().__init__(parent)
+
         self.controller = controller
 
-        ctk.CTkLabel(self, text="Game Page").pack(pady=20)
-        ctk.CTkButton(self, text="Back to Menu", command=lambda: controller.show_frame("MainMenu")).pack()
+        gameTextBox=ctk.CTkTextbox(self, width=100, height = 20, corner_radius=0,activate_scrollbars = False) 
+        gameTextBox.pack(pady=5)
+
+
+        player_name = gameTextBox.get("1.0", "end").strip()
+        gamePlayOneOnOne = ctk.CTkButton(self,text="Play one on one",  command=lambda: controller.show_frame("OptionPage"))
+        gamePlayOneOnOne.pack(pady=5)
+        
+        gameCreateRoom = ctk.CTkButton(self,text="Create Room",  command=lambda: controller.show_frame("MainMenu"))
+        gameCreateRoom.pack(pady=5)
+        
+        gameJoinRoom =ctk.CTkButton(self,text="Join Room",  command=lambda: controller.show_frame("MainMenu"))
+        gameJoinRoom.pack(pady=5)
+        
+        gameBacktoMenu = ctk.CTkButton(self, text="Back to Main Menu", command=lambda: controller.show_frame("MainMenu"))
+        gameBacktoMenu.pack(pady=5)
+
+import random
+class OptionPage(ctk.CTkFrame):
+    def __init__(self, parent, controller,options=['Car','Tomato','Dog']):
+        super().__init__(parent)
+        self.controller = controller
+        optionsCapacity = len(options)-1
+        used = []
+
+        ChoiceLabel=ctk.CTkLabel(self, text="Choose a word:")
+        ChoiceLabel.pack(pady=5)
+
+
+        for i in range(3):
+            optionsCapacity = len(options)-1
+            optionIndex = random.randint(0,optionsCapacity)
+            optionName = options[optionIndex]
+
+            options1 = ctk.CTkButton(self, text = optionName, command = lambda: print("test"))
+            options1.pack(pady=5)
+
+            used.append(optionName)
+
+        # wanted to make automatic 
+
+        # randomitem = options[random.randint(0,optionsCapacity)]
+
+        # option1 = ctk.CTkButton(self, text = randomitem, command = lambda: print("test"))
+        # option1.pack(pady=5)
+
+        # randomitem = options[random.randint(0,optionsCapacity)]
+        # options.pop(randomitem)
+
+        # option2 = ctk.CTkButton(self, text = randomitem, command = lambda: print("test"))
+        # option2.pack(pady=5)
+
+        # randomitem = options[random.randint(0,optionsCapacity)]
+        # options.pop(randomitem)
+
+        # option3 = ctk.CTkButton(self, text = randomitem, command = lambda: print("test"))
+        # option3.pack(pady=5)
 
 if __name__ == "__main__":
     ctk.set_appearance_mode("dark")
