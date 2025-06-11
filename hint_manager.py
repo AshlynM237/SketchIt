@@ -1,12 +1,13 @@
 import json
 from pprint import pprint
-def loadPrompts():
+
+def loadHintData():
     with open('hints.json') as f:
         x = json.load(f)
     return x
 
 def loadWords():
-    data= loadHints()
+    data= loadHintData()
     options=[]
     for hint in data['words']:
         options.append(hint['word'])
