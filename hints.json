@@ -1,0 +1,504 @@
+{
+    "words": [
+      {
+        "word": "butterfly",
+        "hints": [
+          "Something that goes through a transformation",
+          "You might see this in a garden during spring",
+          "It has colorful wings and flies from flower to flower",
+          "It starts life as a caterpillar",
+          "A delicate insect with symmetrical patterned wings"
+        ]
+      },
+      {
+        "word": "pizza",
+        "hints": [
+          "Something round that people share",
+          "It's hot and comes in a box",
+          "It has a flat base with toppings",
+          "Popular food from Italy with cheese",
+          "Round bread with tomato sauce and melted cheese"
+        ]
+      },
+      {
+        "word": "lighthouse",
+        "hints": [
+          "A tall structure that helps people navigate",
+          "Found near water and operates at night",
+          "Ships look for this beacon in the darkness",
+          "Coastal tower that warns of dangerous rocks",
+          "Tall building with a rotating bright light on top"
+        ]
+      },
+      {
+        "word": "umbrella",
+        "hints": [
+          "Something you carry when weather is bad",
+          "It opens and closes to protect you",
+          "Keeps you dry during storms",
+          "Has a handle and curved ribs",
+          "Collapsible canopy that shields from rain"
+        ]
+      },
+      {
+        "word": "cactus",
+        "hints": [
+          "Something that survives in harsh conditions",
+          "Lives in very dry places",
+          "Green plant that doesn't need much water",
+          "Desert plant with sharp points",
+          "Spiky succulent plant that stores water"
+        ]
+      },
+      {
+        "word": "guitar",
+        "hints": [
+          "Something that makes beautiful sounds",
+          "Has strings that vibrate when touched",
+          "Musical instrument you hold in your arms",
+          "Six-stringed instrument played with fingers",
+          "Wooden instrument with frets and a sound hole"
+        ]
+      },
+      {
+        "word": "snowman",
+        "hints": [
+          "Something built during winter",
+          "Made from frozen precipitation",
+          "Has a face but isn't alive",
+          "Three round parts stacked on top of each other",
+          "Figure made of snow with a carrot nose and coal eyes"
+        ]
+      },
+      {
+        "word": "telescope",
+        "hints": [
+          "Tool used to see things far away",
+          "Scientists use this to study space",
+          "Makes distant objects appear closer",
+          "Long tube with lenses inside",
+          "Optical instrument for viewing stars and planets"
+        ]
+      },
+      {
+        "word": "elephant",
+        "hints": [
+          "Largest land animal",
+          "Has a very good memory",
+          "Lives in Africa and Asia",
+          "Gray animal with big ears",
+          "Mammal with a long trunk and tusks"
+        ]
+      },
+      {
+        "word": "sandwich",
+        "hints": [
+          "Something you eat with your hands",
+          "Made by putting things between two pieces",
+          "Popular lunch food",
+          "Bread with filling in the middle",
+          "Two slices of bread with meat, cheese, or vegetables"
+        ]
+      },
+      {
+        "word": "windmill",
+        "hints": [
+          "Uses natural power to work",
+          "Has parts that spin in the breeze",
+          "Tall structure found in open fields",
+          "Generates electricity from moving air",
+          "Tower with large rotating blades"
+        ]
+      },
+      {
+        "word": "penguin",
+        "hints": [
+          "Animal that lives in cold places",
+          "Black and white creature",
+          "Can't fly but is great in water",
+          "Waddles on ice and swims in ocean",
+          "Flightless bird from Antarctica"
+        ]
+      },
+      {
+        "word": "castle",
+        "hints": [
+          "Large old building where important people lived",
+          "Has thick walls for protection",
+          "Medieval fortress with towers",
+          "Stone structure with a moat and drawbridge",
+          "Fortified palace with battlements and turrets"
+        ]
+      },
+      {
+        "word": "bicycle",
+        "hints": [
+          "Transportation with no engine",
+          "You use your legs to make it move",
+          "Has round parts that turn",
+          "Two-wheeled vehicle you pedal",
+          "Bike with handlebars, seat, and chain"
+        ]
+      },
+      {
+        "word": "sunflower",
+        "hints": [
+          "Something that follows the sun",
+          "Tall yellow plant",
+          "Grows in fields and gardens",
+          "Large flower that faces east in morning",
+          "Yellow petaled flower with edible seeds in center"
+        ]
+      },
+      {
+        "word": "rocket",
+        "hints": [
+          "Vehicle that goes very high",
+          "Uses fire and smoke to move",
+          "Takes people to space",
+          "Pointed vehicle that launches upward",
+          "Spacecraft with engines that blast off"
+        ]
+      },
+      {
+        "word": "icecream",
+        "hints": [
+          "Cold treat that melts quickly",
+          "Popular dessert in summer",
+          "Comes in many flavors and colors",
+          "Frozen dairy product served in cones",
+          "Sweet frozen dessert made from milk and cream"
+        ]
+      },
+      {
+        "word": "whale",
+        "hints": [
+          "Largest creature in the ocean",
+          "Mammal that lives underwater",
+          "Breathes air through a hole on top",
+          "Marine animal that spouts water",
+          "Massive sea mammal with a blowhole"
+        ]
+      },
+      {
+        "word": "key",
+        "hints": [
+          "Small metal object that opens things",
+          "You carry these in your pocket",
+          "Unlocks doors and starts cars",
+          "Has teeth that match specific locks",
+          "Metal tool with ridges that fits into keyholes"
+        ]
+      },
+      {
+        "word": "owl",
+        "hints": [
+          "Nocturnal creature with excellent vision",
+          "Bird that hunts at night",
+          "Has large round eyes and turns its head",
+          "Hoots and flies silently through darkness",
+          "Night bird with big eyes and rotating neck"
+        ]
+      },
+      {
+        "word": "rainbow",
+        "hints": [
+          "Appears after rain and sun combine",
+          "Arc of colors in the sky",
+          "Has seven distinct colors",
+          "Natural light phenomenon in the atmosphere",
+          "Colorful arc showing red, orange, yellow, green, blue, indigo, violet"
+        ]
+      },
+      {
+        "word": "robot",
+        "hints": [
+          "Artificial being that follows commands",
+          "Made of metal and electronic parts",
+          "Can be programmed to do tasks",
+          "Mechanical human-like figure",
+          "Automated machine with sensors and actuators"
+        ]
+      },
+      {
+        "word": "crown",
+        "hints": [
+          "Symbol of power and authority",
+          "Worn on the head during ceremonies",
+          "Made of precious metals and gems",
+          "Royal headpiece for kings and queens",
+          "Ornate golden circlet with jewels"
+        ]
+      },
+      {
+        "word": "mushroom",
+        "hints": [
+          "Grows in dark damp places",
+          "Not a plant but still grows from ground",
+          "Has a cap and stem",
+          "Fungus found in forests after rain",
+          "Umbrella-shaped fungus with gills underneath"
+        ]
+      },
+      {
+        "word": "airplane",
+        "hints": [
+          "Fast way to travel long distances",
+          "Flies high above the clouds",
+          "Has wings and engines",
+          "Carries passengers across the sky",
+          "Aircraft with wings, fuselage, and jet engines"
+        ]
+      },
+      {
+        "word": "compass",
+        "hints": [
+          "Tool that helps you find direction",
+          "Always points the same way",
+          "Used by explorers and sailors",
+          "Has a needle that spins freely",
+          "Navigation instrument with magnetic needle pointing north"
+        ]
+      },
+      {
+        "word": "dragon",
+        "hints": [
+          "Mythical creature from legends",
+          "Large winged beast that breathes fire",
+          "Found in fairy tales and fantasy stories",
+          "Reptilian monster with scales and claws",
+          "Legendary fire-breathing lizard with wings"
+        ]
+      },
+      {
+        "word": "hourglass",
+        "hints": [
+          "Ancient device for measuring something",
+          "Uses gravity to work",
+          "Sand flows from top to bottom",
+          "Glass container with narrow middle",
+          "Timer with sand trickling between two bulbs"
+        ]
+      },
+      {
+        "word": "peacock",
+        "hints": [
+          "Colorful bird known for showing off",
+          "Male has spectacular plumage display",
+          "Native to India and Southeast Asia",
+          "Spreads beautiful feathers like a fan",
+          "Blue and green bird with eye-spotted tail feathers"
+        ]
+      },
+      {
+        "word": "volcano",
+        "hints": [
+          "Mountain that sometimes explodes",
+          "Spits out hot melted rock",
+          "Opening in Earth's crust",
+          "Cone-shaped mountain with lava flows",
+          "Geological formation that erupts magma and ash"
+        ]
+      },
+      {
+        "word": "octopus",
+        "hints": [
+          "Sea creature with multiple limbs",
+          "Very intelligent marine animal",
+          "Can change colors to hide",
+          "Soft-bodied mollusk with suction cups",
+          "Eight-armed cephalopod with tentacles"
+        ]
+      },
+      {
+        "word": "treasure",
+        "hints": [
+          "Something valuable that's hidden",
+          "Pirates searched for this",
+          "Often buried in secret locations",
+          "Chest full of gold and jewels",
+          "Hidden cache of coins, gems, and precious metals"
+        ]
+      },
+      {
+        "word": "magnet",
+        "hints": [
+          "Object that pulls certain metals toward it",
+          "Has invisible force field around it",
+          "Sticks to refrigerators and metal doors",
+          "Has north and south poles",
+          "Magnetic material that attracts iron and steel"
+        ]
+      },
+      {
+        "word": "pyramid",
+        "hints": [
+          "Ancient structure with triangular sides",
+          "Built by civilizations long ago",
+          "Tomb for important rulers",
+          "Four-sided monument tapering to point",
+          "Egyptian stone structure with square base and triangular faces"
+        ]
+      },
+      {
+        "word": "zebra",
+        "hints": [
+          "African animal with distinctive pattern",
+          "Black and white striped creature",
+          "Wild horse relative",
+          "Grazes on savanna grasslands",
+          "Striped equine with black and white markings"
+        ]
+      },
+      {
+        "word": "clock",
+        "hints": [
+          "Device that tells you something important",
+          "Has moving parts that go in circles",
+          "Found on walls and wrists",
+          "Shows hours and minutes",
+          "Timepiece with hands or digital display"
+        ]
+      },
+      {
+        "word": "spider",
+        "hints": [
+          "Small creature that catches prey",
+          "Creates intricate geometric patterns",
+          "Has more legs than most insects",
+          "Spins webs to trap flying bugs",
+          "Eight-legged arachnid that builds webs"
+        ]
+      },
+      {
+        "word": "mountain",
+        "hints": [
+          "Natural formation that reaches high up",
+          "Challenging for people to climb",
+          "Has snow on top in cold regions",
+          "Tall rocky elevation with steep slopes",
+          "Elevated landform with peak and ridges"
+        ]
+      },
+      {
+        "word": "camera",
+        "hints": [
+          "Device that captures memories",
+          "Creates images of people and places",
+          "Has a lens and makes clicking sound",
+          "Takes photographs and videos",
+          "Optical device that records images on film or digitally"
+        ]
+      },
+      {
+        "word": "banana",
+        "hints": [
+          "Tropical fruit that's curved",
+          "Yellow when ripe",
+          "Monkeys love to eat this",
+          "Grows in bunches on trees",
+          "Elongated yellow fruit you peel before eating"
+        ]
+      },
+      {
+        "word": "diamond",
+        "hints": [
+          "Most valuable precious stone",
+          "Extremely hard natural material",
+          "Sparkles and reflects light brilliantly",
+          "Clear crystal used in jewelry",
+          "Hardest gemstone made of pure carbon"
+        ]
+      },
+      {
+        "word": "kangaroo",
+        "hints": [
+          "Animal that moves by jumping",
+          "Carries babies in a pouch",
+          "Native to Australia",
+          "Has powerful hind legs for hopping",
+          "Marsupial that bounces on large back legs"
+        ]
+      },
+      {
+        "word": "sword",
+        "hints": [
+          "Ancient weapon used by warriors",
+          "Long metal blade with handle",
+          "Used by knights and samurai",
+          "Sharp-edged weapon for combat",
+          "Steel blade with hilt and crossguard"
+        ]
+      },
+      {
+        "word": "turtle",
+        "hints": [
+          "Slow-moving reptile with protection",
+          "Carries its home on its back",
+          "Can pull head inside when scared",
+          "Lives both on land and in water",
+          "Shelled reptile with retractable head and limbs"
+        ]
+      },
+      {
+        "word": "bridge",
+        "hints": [
+          "Structure that connects two places",
+          "Helps people cross over obstacles",
+          "Spans across water or valleys",
+          "Made of steel, stone, or concrete",
+          "Elevated roadway crossing rivers or canyons"
+        ]
+      },
+      {
+        "word": "balloon",
+        "hints": [
+          "Inflated object that floats",
+          "Popular at parties and celebrations",
+          "Filled with air or special gas",
+          "Colorful rubber sac that rises up",
+          "Inflatable decoration filled with helium"
+        ]
+      },
+      {
+        "word": "moon",
+        "hints": [
+          "Bright object visible at night",
+          "Changes shape throughout the month",
+          "Earth's natural satellite",
+          "Reflects sunlight in darkness",
+          "Celestial body that orbits our planet"
+        ]
+      },
+      {
+        "word": "book",
+        "hints": [
+          "Contains stories and information",
+          "Made of many pages bound together",
+          "You read this to learn or be entertained",
+          "Has words printed on paper sheets",
+          "Bound collection of printed pages with text"
+        ]
+      },
+      {
+        "word": "fire",
+        "hints": [
+          "Hot glowing phenomenon that consumes fuel",
+          "Provides warmth and light",
+          "Orange and red flickering energy",
+          "Burning flames that give off heat",
+          "Combustion process producing heat, light, and smoke"
+        ]
+      },
+      {
+        "word": "shovel",
+        "hints": [
+          "Tool used for moving loose material",
+          "Has a long handle and flat blade",
+          "Essential for gardening and construction",
+          "Digging implement with wooden or metal handle",
+          "Spade-like tool for excavating dirt and debris"
+        ]
+      }
+    ]
+  }
