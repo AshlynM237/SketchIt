@@ -1,7 +1,14 @@
 import customtkinter as ctk
 from hint_manager import loadWords
+import random
+import customtkinter as ctk
+import tkinter as tk
+import json
+import os
+
 global player_name
 player_name = ""
+option_chosen = ""
 
 BUTTON_PADY=20
 BUTTON_PADX=10
@@ -33,7 +40,7 @@ class App(ctk.CTk):
             frame.destroy()
             
         self.frames = {}
-        for F in (MainMenu, SettingsPage, GamePage,OptionPage):
+        for F in (MainMenu, SettingsPage, GamePage, OptionPage, DrawingPage):
             page_name = F.__name__
             frame = F(parent=self.container, controller=self)
             self.frames[page_name] = frame
@@ -129,7 +136,6 @@ class GamePage(ctk.CTkFrame):
         gameBacktoMenu = ctk.CTkButton(self, text="Back to Main Menu", command=lambda: controller.show_frame("MainMenu"))
         gameBacktoMenu.pack(pady=5)
 
-import random
 class OptionPage(ctk.CTkFrame):
     def __init__(self, parent, controller,options=loadWords()):
         super().__init__(parent)
@@ -139,7 +145,6 @@ class OptionPage(ctk.CTkFrame):
 
         ChoiceLabel=ctk.CTkLabel(self, text="Choose a word:")
         ChoiceLabel.pack(pady=5)
-        print(options)
 
 
         for i in range(3):
@@ -147,12 +152,77 @@ class OptionPage(ctk.CTkFrame):
             optionIndex = random.randint(0,optionsCapacity)
             optionName = options[optionIndex]
 
-            options1 = ctk.CTkButton(self, text = optionName, command = lambda: print("test"))
-            options1.pack(pady=5)
             used.append(optionName)
-            print(used)
-            
+            if optionName in used:
+                optionIndex = random.randint(0,optionsCapacity)
+                optionName = options[optionIndex]
+
+            options1 = ctk.CTkButton(self, text = optionName, command = lambda: controller.show_frame("DrawingPage"))
+            options1.pack(pady=5)
+
+class DrawingPage(ctk.CTkFrame):
+    def __init__(self, parent, controller, logfile="drawing.jsonl"):
+        super().__init__(parent)
+        self.controller = controller
+
+        # where we append segments
+        self.logfile = os.path.abspath(logfile)
+
+        # Button frame
+        btn_frame = ctk.CTkFrame(self)
+        btn_frame.pack(fill="x", padx=10, pady=5)
+        ctk.CTkButton(btn_frame, text="Clear", command=self.clear_canvas).pack(side="left")
+        ctk.CTkButton(btn_frame, text="Print", command=self.print_points).pack(side="left")
+
+        # Drawing canvas
+        self.canvas = tk.Canvas(self, bg="white")
+        self.canvas.pack(fill="both", expand=True)
+
+        # State
+        self.last_x = None
+        self.last_y = None
+        self.points = []
+
+        # Bind events
+        self.canvas.bind("<ButtonPress-1>", self.on_button_press)
+        self.canvas.bind("<B1-Motion>", self.on_move)
+
+    def on_button_press(self, event):
+        self.last_x, self.last_y = event.x, event.y
+
+    def on_move(self, event):
+        x, y = event.x, event.y
+        seg = ((self.last_x, self.last_y), (x, y))
+        # draw
+        self.canvas.create_line(*seg[0], *seg[1], width=2, capstyle=tk.ROUND)
+        # store in memory
+        self.points.append(seg)
+        # write to disk
+        self._log_segment(seg)
+        self.last_x, self.last_y = x, y
+
+    def _log_segment(self, seg):
+        line = json.dumps([list(seg[0]), list(seg[1])])
+        with open(self.logfile, "a") as f:
+            f.write(line + "\n")
+            f.flush()
+            os.fsync(f.fileno())
+
+    def clear_canvas(self):
+        self.canvas.delete("all")
+        self.points.clear()
+        # reset log file
+        open(self.logfile, "w").close()
+
+    def print_points(self):
+        print("Drawing points:")
+        for seg in self.points:
+            print(seg)
+
+
+
 if __name__ == "__main__":
     ctk.set_appearance_mode("dark")
     app = App()
     app.mainloop()
+    app = DrawingPage()
