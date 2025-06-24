@@ -29,6 +29,17 @@ class App(ctk.CTk):
         #expand=True: allows the container to expand to fill the available space
         # self.container.pack(fill="both", expand=True)
         self.container.grid(row=0,column=0)
+        
+        # allow row 0 / col 0 of the root window (self) to expand
+        self.grid_rowconfigure(0, weight=1)
+        self.grid_columnconfigure(0, weight=1)
+
+        # allow row 0 / col 0 of the container to expand its child frames
+        self.container.grid_rowconfigure(0, weight=1)
+        self.container.grid_columnconfigure(0, weight=1)
+
+        
+        
         ctk.set_default_color_theme("green")
         
         self.build_frames()
