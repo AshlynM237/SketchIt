@@ -1,3 +1,5 @@
+#This version of the canvas does not work on the macos
+
 import customtkinter as ctk
 import tkinter as tk
 import json
